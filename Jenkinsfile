@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/HindhuSrimathi10/sonar-demo.git'
+                git branch: 'main', url: 'https://github.com/HindhuSrimathi10/sonar-demo.git'
             }
         }
 
