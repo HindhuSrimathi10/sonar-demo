@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git branch: 'main', url: 'https://github.com/HindhuSrimathi10/sonar-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'echo "Building application..."'
