@@ -1,7 +1,7 @@
-def divide(a,b):
-    return a/b
+import os
 
-try:
-    result = divide(10,0)
-except:
-    pass
+def run_command(user_input):
+    os.system("echo " + user_input)   # Vulnerable: command injection
+
+user = input("Enter command: ")
+run_command(user)
