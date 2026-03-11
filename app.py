@@ -1,7 +1,6 @@
-import os
+def calculate_sum(a, b):
+    result = a + b
+    unused_variable = 10   # Code Smell: unused variable
+    return result
 
-def run_command(user_input):
-    os.system("echo " + user_input)   # Vulnerable: command injection
-
-user = input("Enter command: ")
-run_command(user)
+print(calculate_sum(5, 3))
